@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timer</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <div class="container">
-          <h1>COUNTDOWN TIMER</h1>
-          <div class="input-container">
-            <label for="date-input">Set Date and Time to Countdown</label>
-            <input type="datetime-local" id="date-input"><br><br>
-            <button id="start-button">Start</button>
-          </div>
-          <div class="timer-display">
-            <p id="countdown"> Countdown starts <br><br>00 Days : 00 Hours : 00 Minutes : 00 Seconds</p>
-          </div>
-        </div>
-        <script src="script.js"></script>
 
+    <div class="weather-app">
+        <h1>Weather Forecast</h1>
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button id="submitBtn">Get Weather</button>
+        <div id="weatherInfo" class="hidden">
+            <h2 id="cityName"></h2>
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <img id="weatherIcon" alt="Weather Icon">
+        </div>
+        <p id="errorMessage" class="hidden"></p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
