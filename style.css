@@ -1,65 +1,46 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #8701c5, #0a4cbc);
-    color: #fff;
     margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
-  
-  .container{
-    margin: auto;
+    background: linear-gradient(to bottom, skyblue,rgb(154, 200, 208) );
+}
+
+.weather-app {
     text-align: center;
-    background-color:  rgba(255, 255, 255, 0.1);
+    background: linear-gradient(to bottom, #4c0202,white );
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .input-container {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    font-size: 12px;
-    margin-bottom: 10px;
-  }
-  
-  input[type="datetime-local"] {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+input, button {
+    margin: 10px;
     padding: 10px;
-    font-size: 1rem;
+    font-size: 14px;
     border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
     border: none;
-    margin-bottom: 10px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #0078d7;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0053a6;
-  }
-  
-  .timer-display {
-    margin-top: 20px;
-  }
-  
-  #countdown {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#weatherInfo img {
+    width: 100px;
+}
