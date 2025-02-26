@@ -1,46 +1,74 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(to bottom, skyblue,rgb(154, 200, 208) );
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, skyblue,white);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.weather-app {
-    text-align: center;
-    background: linear-gradient(to bottom, #4c0202,white );
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    color: white;
+.container {
+  margin: auto;
+  text-align: center;
+  background: linear-gradient(to bottom, #8701c5, #0a4cbc);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 300px;
 }
 
-input, button {
-    margin: 10px;
-    padding: 10px;
-    font-size: 14px;
-    border-radius: 5px;
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+input[type="date"], input[type="time"] {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #0078d7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
 }
 
 button:hover {
-    background-color: #0056b3;
+  background-color: #39a1a1;
+  color: #e3e7ef;
 }
 
-.hidden {
-    display: none;
+.timer-display {
+  margin-top: 20px;
 }
 
-#weatherInfo img {
-    width: 100px;
+#countdown {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.countdown-item{
+  display: inline;
 }
