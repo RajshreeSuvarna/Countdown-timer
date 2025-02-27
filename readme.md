@@ -12,7 +12,9 @@ The Countdown Timer is a web-based application that allows us to set a specific 
 
 ## Technologies Used
 HTML: Structure of the application
+
 CSS: Styling and user interface enhancements
+
 JavaScript: Timer functionality and user interactions
 
 
